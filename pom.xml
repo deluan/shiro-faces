@@ -101,6 +101,19 @@
             </extension>
         </extensions>
     </build>
+
+    <!-- Deploy configuration based on http://www.beeworks.be/hosting-maven-repository-google-code/ -->
+    <distributionManagement>
+        <repository>
+            <id>googlecode.deluan.repo</id>
+            <url>dav:https://deluan.googlecode.com/svn/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>googlecode.deluan.snapshotrepo</id>
+            <url>dav:https://deluan.googlecode.com/svn/snapshots</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
 
 
