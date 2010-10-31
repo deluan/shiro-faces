@@ -113,6 +113,16 @@ check during development to ensure that your tags are being properly used.
     </tag>
 
     <tag>
+        <name>remembered</name>
+        <tag-class/>
+        <body-content>JSP</body-content>
+        <description>Displays body content only if the current Subject has a known identity that has been
+            obtained from 'RememberMe' services. Note that this is semantically different
+            from the 'authenticated' tag, which is more restrictive.
+        </description>
+    </tag>
+
+    <tag>
         <name>notAuthenticated</name>
         <tag-class/>
         <body-content>JSP</body-content>

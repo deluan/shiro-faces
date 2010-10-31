@@ -9,53 +9,58 @@
     <tag>
         <tag-name>principal</tag-name>
         <component>
-            <component-type>org.apache.shiro.faces.tags.PrincipalTag</component-type>
+            <component-type>org.apache.shiro.web.faces.tags.PrincipalTag</component-type>
         </component>
     </tag>
 
     <tag>
         <tag-name>hasPermission</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.HasPermissionTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.HasPermissionTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>hasAnyPermission</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.HasAnyPermissionTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.HasAnyPermissionTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>lacksPermission</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.LacksPermissionTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.LacksPermissionTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>guest</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.GuestTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.GuestTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>user</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.UserTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.UserTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>authenticated</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.AuthenticatedTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.AuthenticatedTag</handler-class>
+    </tag>
+
+    <tag>
+        <tag-name>remembered</tag-name>
+        <handler-class>org.apache.shiro.web.faces.tags.RememberedTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>notAuthenticated</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.NotAuthenticatedTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.NotAuthenticatedTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>hasRole</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.HasRoleTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.HasRoleTag</handler-class>
     </tag>
 
     <tag>
         <tag-name>lacksRole</tag-name>
-        <handler-class>org.apache.shiro.faces.tags.LacksRoleTag</handler-class>
+        <handler-class>org.apache.shiro.web.faces.tags.LacksRoleTag</handler-class>
     </tag>
 
 </facelet-taglib>
