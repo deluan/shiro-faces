@@ -5,8 +5,8 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
             
     <component>
-        <component-type>org.apache.shiro.faces.tags.PrincipalTag</component-type>
-        <component-class>org.apache.shiro.faces.tags.PrincipalTag</component-class>
+        <component-type>org.apache.shiro.web.faces.tags.PrincipalTag</component-type>
+        <component-class>org.apache.shiro.web.faces.tags.PrincipalTag</component-class>
     </component>
 
 </faces-config>

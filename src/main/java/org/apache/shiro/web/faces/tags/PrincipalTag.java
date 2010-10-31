@@ -1,11 +1,11 @@
-package org.apache.shiro.faces.tags;
+package org.apache.shiro.web.faces.tags;
 
+import javax.faces.context.FacesContext;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
-import javax.faces.context.FacesContext;
 
 /**
  * <p>Tag used to print out the String value of a user's default principal,

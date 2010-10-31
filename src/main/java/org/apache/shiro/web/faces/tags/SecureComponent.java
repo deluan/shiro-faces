@@ -1,13 +1,13 @@
-package org.apache.shiro.faces.tags;
-
-import java.io.IOException;
-import javax.faces.component.UIOutput;
-import javax.faces.context.FacesContext;
+package org.apache.shiro.web.faces.tags;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.faces.component.UIOutput;
+import javax.faces.context.FacesContext;
+import java.io.IOException;
 
 /**
  * Base class for JSF components

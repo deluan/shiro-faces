@@ -1,11 +1,12 @@
-package org.apache.shiro.faces.tags;
+package org.apache.shiro.web.faces.tags;
 
 import com.sun.facelets.FaceletContext;
 import com.sun.facelets.tag.TagConfig;
-import java.io.IOException;
+
 import javax.el.ELException;
 import javax.faces.FacesException;
 import javax.faces.component.UIComponent;
+import java.io.IOException;
 
 /**
  * Base TagHandler for Tags that check for authentication. 
