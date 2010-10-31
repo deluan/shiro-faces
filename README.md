@@ -1,5 +1,5 @@
 
-Maven repository is:
+To use it in your maven project, add the following repository to your `pom.xml`:
 
         <repositories>
             <repository>
@@ -16,3 +16,11 @@ Maven repository is:
                 </releases>
             </repository>
         </repositories>
+
+And add the jar dependency:
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-faces</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
