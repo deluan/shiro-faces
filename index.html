@@ -5,14 +5,14 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>deluan/shiro-faces @ GitHub</title>
+	<title>Apache Shiro Facelets Support</title>
 	
 	<style type="text/css">
 		body {
   		margin-top: 1.0em;
-  		background-color: #d2ce6a;
+#  		background-color: #d2ce6a;
 		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
+#  		color: #000000;
     }
     #container {
       margin: 0 auto;
@@ -26,7 +26,8 @@
     a { color: #2d3195; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
+#		pre { background: #000; color: #fff; padding: 15px;}
+		pre { padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 	</style>
@@ -45,16 +46,23 @@
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/deluan/shiro-faces">shiro-faces</a>
-      <span class="small">by <a href="http://github.com/deluan">deluan</a></span></h1>
+    <h1><a href="http://github.com/deluan/shiro-faces">Apache Shiro Facelets Support</a>
+      </h1>
 
     <div class="description">
       JSF 1.X/Facelets TagLib for Apache Shiro. This taglib reimplements all original JSP tags as their Facelets equivalent, so they can be used in JSF projects.
     </div>
 
-    <h2>Authors</h2>
-<p>Deluan Cotts Quint&atilde;o - <a href="http://techbeats.deluan.com">http://techbeats.deluan.com</a><br/><br/>      </p>
-
+    <h2>Usage</h2>
+	<p>
+		<div>Add my repository to your pom.xml:</div>
+		<script src="http://gist.github.com/655983.js?file=repositories_pom.xml"></script>
+		<div>and add the jar dependency:</div>
+		<script src="http://gist.github.com/655983.js?file=dependency_pom.xml"></script>
+		<div>Now you can declare Shiro's namespace in your xhtml pages and use the tags like this:</div>
+		<script src="http://gist.github.com/655983.js?file=test.xhtml"></script>
+	<br/>      
+	</p>
 
     <h2>Download</h2>
     <p>
@@ -66,6 +74,15 @@
       by running:
       <pre>$ git clone git://github.com/deluan/shiro-faces</pre>
     </p>
+
+    <h2>Author</h2>
+	<p>
+		<div>Deluan Cotts Quint&atilde;o</div>
+		<div><a href="http://techbeats.deluan.com">http://techbeats.deluan.com</a></div>
+		<div><a href="http://github.com/deluan">http://github.com/deluan</a></div>
+		<br/>
+		<br/>      
+	</p>
 
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/deluan/shiro-faces">deluan/shiro-faces</a>
