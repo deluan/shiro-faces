@@ -15,7 +15,7 @@ check during development to ensure that your tags are being properly used.
 
     <short-name>Apache Shiro</short-name>
 
-    <uri>http://shiro.apache.org/tags/facelets</uri>
+    <uri>http://shiro.apache.org/tags</uri>
 
     <description>Shiro Facelets Tag Library (only for code completion)</description>
 

@@ -4,7 +4,7 @@
   "http://java.sun.com/dtd/facelet-taglib_1_0.dtd">
 
 <facelet-taglib>
-    <namespace>http://shiro.apache.org/tags/facelets</namespace>
+    <namespace>http://shiro.apache.org/tags</namespace>
 
     <tag>
         <tag-name>principal</tag-name>
