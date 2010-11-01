@@ -9,9 +9,9 @@ import javax.faces.component.UIComponent;
 import java.io.IOException;
 
 /**
- * Base TagHandler for Tags that check for authentication. 
+ * Base TagHandler for Tags that check for authentication.
  *
- * @author Deluan
+ * @author Deluan Quintao
  */
 public abstract class AuthenticationTag extends SecureTag {
 
@@ -30,12 +30,12 @@ public abstract class AuthenticationTag extends SecureTag {
     protected boolean showTagBody() {
         if (checkAuthentication()) {
             if (log.isTraceEnabled()) {
-                log.trace("Subject does not exist or does not have a known identity (aka \'principal\').  " + "Tag body will be evaluated.");
+                log.trace("Authentication successfully verified.  " + "Tag body will be evaluated.");
             }
             return true;
         } else {
             if (log.isTraceEnabled()) {
-                log.trace("Subject exists or has a known identity (aka \'principal\').  " + "Tag body will not be evaluated.");
+                log.trace("Authentication verification failed.  " + "Tag body will not be evaluated.");
             }
             return false;
         }

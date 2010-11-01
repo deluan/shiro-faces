@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * Base TagHandler for Tags that check for permissions.
  *
- * @author Deluan
+ * @author Deluan Quintao
  */
 public abstract class PermissionTag extends SecureTag {
 

@@ -14,7 +14,7 @@ import com.sun.facelets.tag.TagConfig;
  *
  * <p>The logically opposite tag of this one is the {@link GuestTag}.
  **
- * @author Deluan
+ * @author Deluan Quintao
  * @author Les Hazlewood
  */
 public class UserTag extends GuestTag {

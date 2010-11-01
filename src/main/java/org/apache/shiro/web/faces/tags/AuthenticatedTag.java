@@ -13,7 +13,7 @@ import com.sun.facelets.tag.TagConfig;
  *
  * <p>The logically opposite tag of this one is the {@link NotAuthenticatedTag}
  *
- * @author Deluan
+ * @author Deluan Quintao
  * @author Jeremy Haile
  * @author Les Hazlewood
  */

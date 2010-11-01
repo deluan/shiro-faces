@@ -20,7 +20,7 @@ import java.lang.reflect.Modifier;
  * is specified.</p>
  *
  * @author Jeremy Haile
- * @author Deluan
+ * @author Deluan Quintao
  */
 public class PrincipalTag extends SecureComponent {
 

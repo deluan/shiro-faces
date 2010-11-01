@@ -10,9 +10,12 @@ import javax.faces.context.FacesContext;
 import java.io.IOException;
 
 /**
- * Base class for JSF components
+ * Base class for JSF components.
+ *
+ * <p>OBS: Your subclass is responsible for saving the state of the component. See {@link org.apache.shiro.web.faces.tags.PrincipalTag}'s
+ * StateHolder Methods for an exemple.
  * 
- * @author Deluan
+ * @author Deluan Quintao
  */
 public abstract class SecureComponent extends UIOutput {
 

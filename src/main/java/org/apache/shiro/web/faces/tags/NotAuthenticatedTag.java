@@ -8,7 +8,7 @@ import com.sun.facelets.tag.TagConfig;
  *
  * <p>The logically opposite tag of this one is the {@link AuthenticatedTag}.
  *
- * @author Deluan
+ * @author Deluan Quintao
  * @author Jeremy Haile
  */
 public class NotAuthenticatedTag extends AuthenticatedTag {

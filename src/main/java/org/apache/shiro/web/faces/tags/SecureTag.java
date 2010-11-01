@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Base class for all TagHandlers
  * 
- * @author Deluan 
+ * @author Deluan Quintao
  */
 public abstract class SecureTag extends TagHandler {
 

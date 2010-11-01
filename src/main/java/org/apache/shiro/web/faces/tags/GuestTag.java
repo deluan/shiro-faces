@@ -9,7 +9,7 @@ import com.sun.facelets.tag.TagConfig;
  * <p>The logically opposite tag of this one is the {@link UserTag}.  Please read that class's JavaDoc as it explains
  * more about the differences between Authenticated/Unauthenticated and User/Guest semantic differences.
  *
- * @author Deluan
+ * @author Deluan Quintao
  * @author Les Hazlewood
  */
 public class GuestTag extends AuthenticationTag {
