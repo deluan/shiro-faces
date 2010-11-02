@@ -8,7 +8,7 @@
     <name>Apache Shiro :: Facelets Support</name>
 
     <properties>
-        <shiro.version>1.0.0-incubating</shiro.version>
+        <shiro.version>1.1.0</shiro.version>
         <jdk.version>1.5</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
