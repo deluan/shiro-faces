@@ -3,7 +3,7 @@
         "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
 
 <!--
-This file describes the tag-library for IDE?s autocompletion, and for Validation, so that you can
+This file describes the tag-library for IDE's autocompletion and for validation, so that you can
 check during development to ensure that your tags are being properly used.
 -->
 
