@@ -12,7 +12,7 @@ import com.sun.facelets.tag.TagConfig;
  * @author Deluan Quintao
  * @author Les Hazlewood
  */
-public class GuestTag extends AuthenticationTag {
+public class GuestTag extends AuthenticationTagHandler {
 
     public GuestTag(TagConfig config) {
         super(config);

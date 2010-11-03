@@ -9,7 +9,7 @@ import org.apache.shiro.subject.Subject;
  *
  * @author Deluan
  */
-public class HasAnyPermissionTag extends PermissionTag {
+public class HasAnyPermissionTag extends PermissionTagHandler {
 
     private static final String PERMISSIONS_DELIMETER = ",";
 

@@ -12,11 +12,11 @@ import org.slf4j.LoggerFactory;
  * 
  * @author Deluan Quintao
  */
-public abstract class SecureTag extends TagHandler {
+public abstract class SecureTagHandler extends TagHandler {
 
     protected final Logger log = LoggerFactory.getLogger(this.getClass());
 
-    public SecureTag(TagConfig config) {
+    public SecureTagHandler(TagConfig config) {
         super(config);
     }
 

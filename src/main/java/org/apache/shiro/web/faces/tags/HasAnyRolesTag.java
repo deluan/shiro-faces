@@ -10,7 +10,7 @@ import org.apache.shiro.subject.Subject;
  * @author Deluan Quintao
  * @author Jeremy Haile
  */
-public class HasAnyRolesTag extends org.apache.shiro.web.faces.tags.PermissionTag {
+public class HasAnyRolesTag extends PermissionTagHandler {
 
     //TODO - complete JavaDoc
 

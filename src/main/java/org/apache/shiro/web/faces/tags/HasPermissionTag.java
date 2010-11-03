@@ -8,7 +8,7 @@ import com.sun.facelets.tag.TagConfig;
  *
  * @author Deluan Quintao
  */
-public class HasPermissionTag extends PermissionTag {
+public class HasPermissionTag extends PermissionTagHandler {
 
     public HasPermissionTag(TagConfig config) {
         super(config);

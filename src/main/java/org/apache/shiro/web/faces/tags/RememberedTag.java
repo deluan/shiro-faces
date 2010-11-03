@@ -15,7 +15,7 @@ import com.sun.facelets.tag.TagConfig;
  *
  * @author Deluan Quintao
  */
-public class RememberedTag extends AuthenticationTag {
+public class RememberedTag extends AuthenticationTagHandler {
 
     public RememberedTag(TagConfig config) {
         super(config);

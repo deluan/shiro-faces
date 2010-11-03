@@ -13,9 +13,9 @@ import java.io.IOException;
  *
  * @author Deluan Quintao
  */
-public abstract class AuthenticationTag extends SecureTag {
+public abstract class AuthenticationTagHandler extends SecureTagHandler {
 
-    public AuthenticationTag(TagConfig config) {
+    public AuthenticationTagHandler(TagConfig config) {
         super(config);
     }
 

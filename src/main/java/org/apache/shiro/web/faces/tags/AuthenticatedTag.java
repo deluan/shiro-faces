@@ -17,7 +17,7 @@ import com.sun.facelets.tag.TagConfig;
  * @author Jeremy Haile
  * @author Les Hazlewood
  */
-public class AuthenticatedTag extends AuthenticationTag {
+public class AuthenticatedTag extends AuthenticationTagHandler {
 
     public AuthenticatedTag(TagConfig config) {
         super(config);

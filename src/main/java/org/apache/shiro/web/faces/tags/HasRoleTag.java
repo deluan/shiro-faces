@@ -5,7 +5,7 @@ import com.sun.facelets.tag.TagConfig;
 /**
  * @author Deluan Quintao
  */
-public class HasRoleTag extends PermissionTag {
+public class HasRoleTag extends PermissionTagHandler {
 
     // TODO - complete JavaDoc
 

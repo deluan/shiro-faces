@@ -15,11 +15,11 @@ import java.io.IOException;
  *
  * @author Deluan Quintao
  */
-public abstract class PermissionTag extends SecureTag {
+public abstract class PermissionTagHandler extends SecureTagHandler {
 
     private final TagAttribute name;
 
-    public PermissionTag(TagConfig config) {
+    public PermissionTagHandler(TagConfig config) {
         super(config);
         this.name = this.getRequiredAttribute("name");
     }
