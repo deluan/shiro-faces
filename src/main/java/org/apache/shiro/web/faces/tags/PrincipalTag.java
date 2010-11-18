@@ -1,5 +1,7 @@
 package org.apache.shiro.web.faces.tags;
 
+import org.apache.shiro.subject.PrincipalCollection;
+
 import javax.faces.context.FacesContext;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
@@ -10,7 +12,7 @@ import java.lang.reflect.Modifier;
 /**
  * <p>Tag used to print out the String value of a user's default principal,
  * or a specific principal as specified by the tag's attributes.</p>
- *
+ * <p/>
  * <p> If no attributes are specified, the tag prints out the <tt>toString()</tt>
  * value of the user's default principal.  If the <tt>type</tt> attribute
  * is specified, the tag looks for a principal with the given type.  If the
@@ -115,7 +117,10 @@ public class PrincipalTag extends SecureComponent {
 
         try {
             Class cls = Class.forName(type);
-            principal = getSubject().getPrincipals().oneByType(cls);
+            PrincipalCollection principals = getSubject().getPrincipals();
+            if (principals != null) {
+                principal = principals.oneByType(cls);
+            }
         } catch (ClassNotFoundException e) {
             if (log.isErrorEnabled()) {
                 log.error("Unable to find class for name [" + type + "]");
@@ -169,6 +174,7 @@ public class PrincipalTag extends SecureComponent {
 
         return strValue;
     }
+
     // ----------------------------------------------------- StateHolder Methods
     private Object[] values;
 
