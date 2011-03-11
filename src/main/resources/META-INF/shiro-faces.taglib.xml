@@ -63,5 +63,10 @@
         <handler-class>org.apache.shiro.web.faces.tags.LacksRoleTag</handler-class>
     </tag>
 
+    <tag>
+        <tag-name>hasAnyRoles</tag-name>
+        <handler-class>org.apache.shiro.web.faces.tags.HasAnyRolesTag</handler-class>
+    </tag>
+
 </facelet-taglib>
 
