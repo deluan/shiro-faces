@@ -22,5 +22,5 @@ And add the jar dependency:
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-faces</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
