@@ -1,6 +1,6 @@
 package org.apache.shiro.web.faces.tags;
 
-import com.sun.facelets.tag.TagConfig;
+import javax.faces.view.facelets.TagConfig;
 
 /**
  * Tag that renders the tag body if the current user <em>is not</em> known to the system, either because they

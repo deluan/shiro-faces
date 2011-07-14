@@ -1,7 +1,7 @@
-package org.apache.shiro.web.faces.tags;
+package org.apache.shiro.web.faces.component.hasanyroles;
 
-import javax.faces.view.facelets.TagConfig;
 import org.apache.shiro.subject.Subject;
+import org.apache.shiro.web.faces.component.hasrole.HasRole;
 
 
 /**
@@ -10,17 +10,19 @@ import org.apache.shiro.subject.Subject;
  * @author Deluan Quintao
  * @author Jeremy Haile
  */
-public class HasAnyRolesTag extends PermissionTagHandler {
+public class HasAnyRoles extends HasRole {
 
     //TODO - complete JavaDoc
 
     // Delimeter that separates role names in tag attribute
     private static final String ROLE_NAMES_DELIMETER = ",";
 
-    public HasAnyRolesTag(TagConfig config) {
-        super(config);
+    public HasAnyRoles() {
+        super();
+        setRendererType("org.apache.shiro.web.faces.component.hasanyroles.HasAnyRolesRenderer");
     }
 
+    @Override
     protected boolean showTagBody(String roleNames) {
         boolean hasAnyRole = false;
 

@@ -1,6 +1,6 @@
 package org.apache.shiro.web.faces.tags;
 
-import com.sun.facelets.tag.TagConfig;
+import javax.faces.view.facelets.TagConfig;
 
 /**
  * Tag that renders the tag body only if the current user has <em>not</em> executed a successful authentication

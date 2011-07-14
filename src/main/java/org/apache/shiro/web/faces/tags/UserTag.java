@@ -1,6 +1,6 @@
 package org.apache.shiro.web.faces.tags;
 
-import com.sun.facelets.tag.TagConfig;
+import javax.faces.view.facelets.TagConfig;
 
 /**
  * Tag that renders the tag body if the current user known to the system, either from a successful login attempt

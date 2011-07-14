@@ -1,13 +1,17 @@
-<?xml version="1.0"?>
-<!DOCTYPE taglib PUBLIC
-  "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
-  "http://java.sun.com/dtd//web-jsptaglibrary_1_2.dtd">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<!--
+This file describes the tag-library for IDE's autocompletion and for validation, so that you can
+check during development to ensure that your tags are being properly used.
+-->
 
 <taglib>
 
+    <tlib-version>1.1.2</tlib-version>
 
-  <tlib-version>2.0.0</tlib-version>
-  <jsp-version>1.2</jsp-version>
+    <jsp-version>1.2</jsp-version>
 
     <short-name>Apache Shiro</short-name>
 

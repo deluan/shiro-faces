@@ -1,71 +1,162 @@
 <?xml version="1.0"?>
-<!DOCTYPE facelet-taglib PUBLIC
-  "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN"
-  "http://java.sun.com/dtd/facelet-taglib_1_0.dtd">
-
-<facelet-taglib>
+<facelet-taglib xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd"
+version="2.0">
     <namespace>http://shiro.apache.org/tags</namespace>
 
     <tag>
+        <description></description>
         <tag-name>principal</tag-name>
         <component>
-            <component-type>org.apache.shiro.web.faces.tags.PrincipalTag</component-type>
+            <component-type>org.apache.shiro.web.faces.component.principal.Principal</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.principal.PrincipalRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
         </component>
+        <attribute>
+            <description></description>
+            <name>type</name>
+            <required>false</required>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>property</name>
+            <required>false</required>
+        </attribute>
+        <attribute>
+            <description></description>
+            <name>defaultValue</name>
+            <required>false</required>
+        </attribute>
     </tag>
 
     <tag>
         <tag-name>hasPermission</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.HasPermissionTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.haspermission.HasPermission</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.haspermission.HasPermissionRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
     </tag>
 
     <tag>
         <tag-name>hasAnyPermission</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.HasAnyPermissionTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.hasanypermission.HasAnyPermission</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.hasanypermission.HasAnyPermissionRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
     </tag>
 
     <tag>
         <tag-name>lacksPermission</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.LacksPermissionTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.lackspermission.LacksPermission</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.lackspermission.LacksPermissionRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
     </tag>
 
     <tag>
         <tag-name>guest</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.GuestTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.guest.Guest</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.guest.GuestRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
     </tag>
 
     <tag>
         <tag-name>user</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.UserTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.user.User</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.user.UserRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
     </tag>
 
     <tag>
         <tag-name>authenticated</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.AuthenticatedTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.authenticated.Authenticated</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.authenticated.AuthenticatedRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
     </tag>
 
     <tag>
         <tag-name>remembered</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.RememberedTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.remembered.Remembered</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.remembered.RememberedRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
     </tag>
 
     <tag>
         <tag-name>notAuthenticated</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.NotAuthenticatedTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.notauthenticated.NotAuthenticated</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.notauthenticated.NotAuthenticatedRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
     </tag>
 
     <tag>
         <tag-name>hasRole</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.HasRoleTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.hasrole.HasRole</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.hasrole.HasRoleRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
     </tag>
 
     <tag>
         <tag-name>lacksRole</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.LacksRoleTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.lacksrole.LacksRole</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.lacksrole.LacksRoleRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
     </tag>
 
     <tag>
         <tag-name>hasAnyRoles</tag-name>
-        <handler-class>org.apache.shiro.web.faces.tags.HasAnyRolesTag</handler-class>
+        <component>
+            <component-type>org.apache.shiro.web.faces.component.hasanyroles.HasAnyRoles</component-type>
+             <renderer-type>org.apache.shiro.web.faces.component.hasanyroles.HasAnyRolesRenderer</renderer-type>
+             <handler-class>org.apache.shiro.web.faces.facelets.ShiroComponentHandler</handler-class>
+        </component>
+        <attribute>
+            <description></description>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
     </tag>
 
 </facelet-taglib>
