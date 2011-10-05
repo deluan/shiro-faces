@@ -1,11 +1,10 @@
 package org.apache.shiro.web.faces.tags;
 
-import com.sun.facelets.FaceletContext;
-import com.sun.facelets.tag.TagConfig;
-
 import javax.el.ELException;
 import javax.faces.FacesException;
 import javax.faces.component.UIComponent;
+import javax.faces.view.facelets.FaceletContext;
+import javax.faces.view.facelets.TagConfig;
 import java.io.IOException;
 
 /**

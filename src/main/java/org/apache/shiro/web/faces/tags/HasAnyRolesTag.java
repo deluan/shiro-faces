@@ -1,7 +1,8 @@
 package org.apache.shiro.web.faces.tags;
 
-import com.sun.facelets.tag.TagConfig;
 import org.apache.shiro.subject.Subject;
+
+import javax.faces.view.facelets.TagConfig;
 
 
 /**
