@@ -1,7 +1,7 @@
-package org.apache.shiro.web.faces.tags;
+package org.apache.shiro.web.faces.component.hasanypermission;
 
-import javax.faces.view.facelets.TagConfig;
 import org.apache.shiro.subject.Subject;
+import org.apache.shiro.web.faces.component.haspermission.HasPermission;
 
 /**
  * Tag that renders the tag body only if the current user has <em>at least one</em> of the comma-delimited
@@ -9,14 +9,16 @@ import org.apache.shiro.subject.Subject;
  *
  * @author Deluan
  */
-public class HasAnyPermissionTag extends PermissionTagHandler {
+public class HasAnyPermission extends HasPermission {
 
     private static final String PERMISSIONS_DELIMETER = ",";
 
-    public HasAnyPermissionTag(TagConfig config) {
-        super(config);
+    public HasAnyPermission() {
+        super();
+        setRendererType("org.apache.shiro.web.faces.component.hasanypermission.HasAnyPermissionRenderer");
     }
 
+    @Override
     protected boolean showTagBody(String permissions) {
         boolean hasAnyPermission = false;
 

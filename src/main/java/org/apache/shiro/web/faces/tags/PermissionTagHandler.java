@@ -1,14 +1,14 @@
 package org.apache.shiro.web.faces.tags;
 
-import com.sun.facelets.FaceletContext;
-import com.sun.facelets.tag.TagAttribute;
-import com.sun.facelets.tag.TagConfig;
 
 import javax.el.ELException;
 import javax.el.ValueExpression;
 import javax.faces.FacesException;
 import javax.faces.component.UIComponent;
 import java.io.IOException;
+import javax.faces.view.facelets.FaceletContext;
+import javax.faces.view.facelets.TagAttribute;
+import javax.faces.view.facelets.TagConfig;
 
 /**
  * Base TagHandler for Tags that check for permissions.

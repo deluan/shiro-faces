@@ -1,6 +1,6 @@
 package org.apache.shiro.web.faces.tags;
 
-import com.sun.facelets.tag.TagConfig;
+import javax.faces.view.facelets.TagConfig;
 
 /**
  * @author Deluan Quintao

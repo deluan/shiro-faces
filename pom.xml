@@ -6,7 +6,19 @@
     <packaging>jar</packaging>
     <version>1.0</version>
     <name>Apache Shiro :: Facelets Support</name>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <properties>
         <shiro.version>1.1.0</shiro.version>
         <jdk.version>1.5</jdk.version>
@@ -20,100 +32,16 @@
             <version>${shiro.version}</version>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-            <scope>provided</scope>
+          <groupId>javax.el</groupId>
+          <artifactId>el-api</artifactId>
+          <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>javax.faces</groupId>
+            <groupId>com.sun.faces</groupId>
             <artifactId>jsf-api</artifactId>
-            <version>1.2_02</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
-            <version>2.1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.facelets</groupId>
-            <artifactId>jsf-facelets</artifactId>
-            <version>1.1.14</version>
-            <scope>provided</scope>
+            <version>2.0.3-FCS</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.1</version>
-                <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
-                    <showDeprecation>true</showDeprecation>
-                    <showWarnings>true</showWarnings>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.4.3</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>2.1.2</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.7</version>
-                <configuration>
-                    <quiet>true</quiet>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-webdav</artifactId>
-                <version>1.0-beta-2</version>
-            </extension>
-        </extensions>
-    </build>
-
-    <!-- Deploy configuration based on http://www.beeworks.be/hosting-maven-repository-google-code/ -->
-    <distributionManagement>
-        <repository>
-            <id>googlecode.deluan.repo</id>
-            <url>dav:https://deluan.googlecode.com/svn/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>googlecode.deluan.snapshotrepo</id>
-            <url>dav:https://deluan.googlecode.com/svn/snapshots</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
 
 
